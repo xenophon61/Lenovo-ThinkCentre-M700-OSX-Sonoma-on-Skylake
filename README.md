@@ -17,3 +17,4 @@ Brief guide:
 Credits:
 - the usual (Apple, the Opencore team, myriads of individual users)
 - (https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/)https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/
+- https://github.com/jkbuha/XPS-9500-IceLake-OpenCore
