@@ -21,7 +21,9 @@ Setup pmset as follows:
 
 ´sudo pmset -a hibernatemode 25
 
+
 sudo pmset -a standby 1
+
 
 sudo pmset -a powernap 1
 
