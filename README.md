@@ -14,6 +14,16 @@ Brief guide:
 - should be bootable (OC 0.9.5 and up-to-date kexts)
 - the individual folders are provided for guidance (of particular significance is config.plist, which lists the DeviceProperties and NVRAM boot args, along with Misc:Boot:Hibernation)
 
+Post-install:
+Setup pmset as follows:
+
+sudo pmset -a hibernatemode 25
+sudo pmset -a standby 1
+sudo pmset -a powernap 1
+sudo pmset -a sleep 1
+sudo pmset -a standbydelaylow 1
+sudo pmset -a standbydelayhigh 1
+
 
 
 Credits:
