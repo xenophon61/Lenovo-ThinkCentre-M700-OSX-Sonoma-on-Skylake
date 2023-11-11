@@ -33,6 +33,7 @@ sudo pmset -a sleep 1
 sudo pmset -a standbydelaylow 1
 
 sudo pmset -a standbydelayhigh 1
+
 ``
 
 
