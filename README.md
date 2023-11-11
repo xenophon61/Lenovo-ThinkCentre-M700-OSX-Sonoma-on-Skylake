@@ -12,7 +12,7 @@ Specifications:
 Brief guide:
 - download the EFI.zip and update the serial number with GenSMBIOS
 - should be bootable (OC 0.9.5 and up-to-date kexts)
-- the individual folders are provided for guidance (the significant one is config.plist, which lists the DeviceProperties and NVRAM boot args)
+- the individual folders are provided for guidance (of particular significance is config.plist, which lists the DeviceProperties and NVRAM boot args, along with Misc:Boot:Hibernation)
 
 
 
