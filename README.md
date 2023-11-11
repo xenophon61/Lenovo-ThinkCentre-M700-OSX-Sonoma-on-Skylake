@@ -11,9 +11,10 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 
 ## Brief guide:
 
-- download the EFI.zip and update the serial number with GenSMBIOS
+- download the EFI.zip, expand it and update the serial number with GenSMBIOS
+- note that the uncompressed EFI folder is for review only (don't copy it to the EFI partition, instead use the expanded EFI.zip)
 - should be bootable (OC 0.9.5 and up-to-date kexts)
-- the individual folders are provided for guidance (of particular significance is config.plist, which lists the DeviceProperties and NVRAM boot args, along with [Misc:Boot:Hibernation](https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/) setup)
+- the individual non-compressed folders are provided for guidance (of particular significance is config.plist, which lists the DeviceProperties and NVRAM boot args, along with [Misc:Boot:Hibernation](https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/) setup)
 
 ## Post-install:
 
