@@ -5,7 +5,7 @@ Specifications:
 - I5-6400t 1.2G Skylake
 - Intel® HD Graphics 530
 - BIOS version 7/2022 FWKTBFA 
-- Has locked MSR2 (CFG Lock var offset = 0x197)
+- Has locked MSR2 (CFG Lock var offset = 0x197, and must be unlocked)
 - Intel wifi (with Broadcom bluetooth)
 - Display connected to the DP connector closest to the power supply (con2)
 
@@ -18,5 +18,6 @@ Brief guide:
 
 Credits:
 - the usual (Apple, the Opencore team, myriads of individual users)
+- Dortania on how to unlock CFG: https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#turning-off-cfg-lock-manually
 - (https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/)https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/
 - https://github.com/jkbuha/XPS-9500-IceLake-OpenCore
