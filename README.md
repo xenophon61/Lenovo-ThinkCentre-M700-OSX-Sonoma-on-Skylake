@@ -17,7 +17,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 
 ## Post-install:
 
-Setup pmset as [follows]([[url](https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/commit/705f534991a6458cc23eaea02799413531471470)](https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/commit/705f534991a6458cc23eaea02799413531471470)):
+Setup pmset as [follows](https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/commit/705f534991a6458cc23eaea02799413531471470)](https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/commit/705f534991a6458cc23eaea02799413531471470):
 
 ```
 sudo pmset -a hibernatemode 25
@@ -33,3 +33,4 @@ sudo pmset -a standbydelayhigh 1
 - Dortania on how to unlock CFG: https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#turning-off-cfg-lock-manually
 - (https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/)https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/
 - https://github.com/jkbuha/XPS-9500-IceLake-OpenCore
+- https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/commit/705f534991a6458cc23eaea02799413531471470
