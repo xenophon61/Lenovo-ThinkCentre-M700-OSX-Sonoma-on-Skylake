@@ -6,6 +6,8 @@ I5-6400t 1.2G Skylake
 Intel® HD Graphics 530
 BIOS version 7/2022 FWKTBFA 
 Has locked MSR2 (CFG Lock var offset = 0x197)
+Intel wifi (with Broadcom bluetooth)
+Display connected to the DP connector closest to the power supply (con2)
 
 Brief guide:
 - download the EFI.zip and update the serial number with GenSMBIOS
