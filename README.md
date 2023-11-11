@@ -19,7 +19,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 
 Setup pmset as follows:
 
-´
+``
 sudo pmset -a hibernatemode 25
 
 
@@ -33,7 +33,8 @@ sudo pmset -a sleep 1
 sudo pmset -a standbydelaylow 1
 
 sudo pmset -a standbydelayhigh 1
-´
+``
+
 
 
 ## Credits:
