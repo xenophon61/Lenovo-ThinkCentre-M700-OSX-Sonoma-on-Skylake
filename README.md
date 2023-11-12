@@ -25,8 +25,30 @@ sudo pmset -a hibernatemode 25
 sudo pmset -a standby 1
 sudo pmset -a powernap 1
 sudo pmset -a sleep 1
-sudo pmset -a standbydelaylow 1
-sudo pmset -a standbydelayhigh 1
+sudo pmset -a standbydelaylow 660
+sudo pmset -a standbydelayhigh 660
+
+devo@ThinkCentre ~ % pmset -g
+System-wide power settings:
+Currently in use:
+ standby              1
+ Sleep On Power Button 1
+ womp                 1
+ halfdim              1
+ hibernatefile        /var/vm/sleepimage
+ proximitywake        1
+ powernap             1
+ autorestart          0
+ networkoversleep     0
+ disksleep            10
+ standbydelayhigh     660
+ sleep                1
+ hibernatemode        25
+ ttyskeepawake        1
+ displaysleep         5
+ tcpkeepalive         1
+ highstandbythreshold 50
+ standbydelaylow      660
 ```
 
 ## Credits:
