@@ -1,5 +1,6 @@
 # Lenovo-ThinkCentre-M700-OSX-Sonoma-on-Skylake
 Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF PC.
+{under construction}
 
 ## Specifications:
 - I5-6400t 1.2G Skylake
