@@ -58,3 +58,4 @@ Currently in use:
 - https://github.com/lshbluesky/OC-GA-B250M-DS3H-Hackintosh (refers to above insanelymac post)
 - https://github.com/jkbuha/XPS-9500-IceLake-OpenCore
 - https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/commit/705f534991a6458cc23eaea02799413531471470
+- https://github.com/acidanthera/bugtracker/issues/1810 (picked up the optimal standbydelaylow/high settings)
