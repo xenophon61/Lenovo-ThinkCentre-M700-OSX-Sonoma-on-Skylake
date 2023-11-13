@@ -61,6 +61,10 @@ Currently in use:
  highstandbythreshold 50
  standbydelaylow      660
 ```
+## Epilogue
+Does it work? Well, I'll leave it on for as long as possible and report back (currently on day 1, it's November 13, 2023). So far so good!
+With greetings from Athens,
+Xen
 
 ## Credits:
 - the usual (Apple, the Dortania / Opencore team, myriads of individual users)
