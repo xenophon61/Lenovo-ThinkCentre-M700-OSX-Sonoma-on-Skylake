@@ -23,6 +23,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 - the USB ports were mapped with CorpNewt's scripts under an iMac19,1 SMBIOS, and then edited to reflect the current MacMini8,1
 - Hackintool reports iGPU as "???", and I don't know the significance of this
 - bluetooth is reported as present, but haven't bothered to check if it works or not (probably won't be reliable)
+- the zipped ready-to-use EFI does not include Audio resources and other themes (to save space); please download if required
 
   
 ## Post-install:
