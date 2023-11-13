@@ -8,7 +8,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 - BIOS version 7/2022 [FWKTBFA](https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m700-tiny/10hy/downloads/ds105487-flash-bios-update-intel-b150-for-thinkcentre-m700-tiny-thinkcentre-m800-m900-m900x-tiny?category=BIOS%2FUEFI) 
 - Has locked MSR2 (CFG Lock var offset = 0x197, and must be [unlocked](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#what-is-cfg-lock))
 - Intel wifi (with Broadcom bluetooth)
-- Display connected to the DP connector closest to the power supply (con2)
+- Display connected to the DP connector closest to the power supply (con2?)
 
 ## Brief guide:
 
