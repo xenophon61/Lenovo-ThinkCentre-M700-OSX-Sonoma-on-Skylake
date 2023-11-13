@@ -3,7 +3,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 {under construction}
 
 ## Specifications:
-- I5-6400t 1.2G (Skylake)
+- I5-6400t 1.2G (Skylake) with 8Gb RAM
 - Intel® HD Graphics 530
 - BIOS version 7/2022 [FWKTBFA](https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m700-tiny/10hy/downloads/ds105487-flash-bios-update-intel-b150-for-thinkcentre-m700-tiny-thinkcentre-m800-m900-m900x-tiny?category=BIOS%2FUEFI) 
 - Has locked MSR2 (CFG Lock var offset = 0x197, and must be [unlocked](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#what-is-cfg-lock))
@@ -18,6 +18,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 - the individual non-compressed folders are provided for guidance (of particular significance is config.plist, which lists the DeviceProperties and NVRAM boot args, along with [Misc:Boot:Hibernation](https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/) setup)
 
 ## Miscellaneous (but important) notes:
+This is a sweet little machine, took me a while to run Sonoma and then stumbled on the infamous wake-from-sleep issue with its HD 530 iGPU. No way I would accept a non-sleeping computer, so took it upon myself to solve the problem - essentially trying laptop-specific advice from OSXLatitude and insanelymac forum users. Seems it's working (fingers crossed). 
 - WOL works, with the included Mausi driver (v1.0.8)
 - use powerbutton to wake
 - the USB ports were mapped with CorpNewt's scripts under an iMac19,1 SMBIOS, and then edited to reflect the current MacMini8,1
@@ -63,6 +64,8 @@ Currently in use:
 
 ## Credits:
 - the usual (Apple, the Dortania / Opencore team, myriads of individual users)
+- [insanelymac](https://www.insanelymac.com)
+- [osxlatitude forums](https://osxlatitude.com)
 - Dortania on how to unlock CFG: https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#turning-off-cfg-lock-manually
 - this post applies to the HD 630, but was used as a template for the HD 530 on the ThinkCentre; genious approach! (https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/)https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/
 - https://github.com/lshbluesky/OC-GA-B250M-DS3H-Hackintosh (refers to above insanelymac post)
