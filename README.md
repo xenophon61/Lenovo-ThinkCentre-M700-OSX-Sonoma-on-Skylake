@@ -21,7 +21,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 This is a sweet little machine, took me a while to run Sonoma and then stumbled on the infamous wake-from-sleep issue with its HD 530 iGPU. No way I would accept a non-sleeping computer, so took it upon myself to solve the problem - essentially trying laptop-specific advice from OSXLatitude and insanelymac forum users. Seems it's working (fingers crossed). 
 - WOL works, with the included Mausi driver (v1.0.8)
 - use powerbutton to wake
-- the USB ports were mapped with CorpNewt's scripts under an iMac19,1 SMBIOS, and then edited to reflect the current MacMini8,1
+- the USB ports were mapped with [CorpNewt's](https://github.com/corpnewt/USBMap) scripts under an iMac19,1 SMBIOS, and then edited to reflect the current MacMini8,1; IIRC the front USB ports only accept USB3.0 devices (i.e. no keyboard/mouses)
 - Hackintool reports iGPU as "???", and I don't know the significance of this
 - bluetooth is reported as present, but haven't bothered to check if it works or not (probably won't be reliable)
 - the zipped ready-to-use EFI does not include Audio resources and other themes (to save space); please download if required
