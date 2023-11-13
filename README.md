@@ -64,6 +64,7 @@ Currently in use:
 
 ## Credits:
 - the usual (Apple, the Dortania / Opencore team, myriads of individual users)
+- [Acidanthera](https://github.com/acidanthera) deserves a standing ovation!
 - [insanelymac](https://www.insanelymac.com)
 - [osxlatitude forums](https://osxlatitude.com)
 - Dortania on how to unlock CFG: https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#turning-off-cfg-lock-manually
