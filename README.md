@@ -3,6 +3,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 {under construction}
 
 ## Specifications:
+- Lenovo ThinkCentre M700 model 10HY002WMG
 - I5-6400t 1.2G (Skylake) with 8Gb RAM
 - Intel® HD Graphics 530
 - BIOS version 7/2022 [FWKTBFA](https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m700-tiny/10hy/downloads/ds105487-flash-bios-update-intel-b150-for-thinkcentre-m700-tiny-thinkcentre-m800-m900-m900x-tiny?category=BIOS%2FUEFI) 
