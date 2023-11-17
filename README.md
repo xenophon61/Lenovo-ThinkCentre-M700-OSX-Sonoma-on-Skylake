@@ -79,7 +79,7 @@ With greetings from Athens,
 - [osxlatitude forums](https://osxlatitude.com)
 - Dortania on how to unlock CFG: https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#turning-off-cfg-lock-manually
 - this post applies to the HD 630, but was used as a template for the HD 530 on the ThinkCentre; genious approach! (https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/)https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/
-- https://github.com/lshbluesky/OC-GA-B250M-DS3H-Hackintosh (refers to above insanelymac post)
+- https://github.com/lshbluesky/OC-GA-B250M-DS3H-Hackintosh (same author as the above insanelymac post)
 - https://github.com/jkbuha/XPS-9500-IceLake-OpenCore
 - https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/commit/705f534991a6458cc23eaea02799413531471470
 - https://github.com/acidanthera/bugtracker/issues/1810 (picked up the optimal standbydelaylow/high settings)
