@@ -15,7 +15,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 ## Brief guide:
 
 - download the EFI.zip, expand it and update your serial number with GenSMBIOS (for a MacMini8,1), as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)
-- note that the uncompressed EFI folder is for review only and is missing Tools and Resources (don't copy it to the EFI partition, instead use the expanded EFI.zip)
+- note that the Files section above includes only a subset, for review purposes. Don't copy it to the EFI partition, instead use the expanded EFI.zip
 - should be bootable (OC 0.9.5 and up-to-date kexts)
 - the individual non-compressed folders are provided for guidance (of particular significance is config.plist, which lists the DeviceProperties and NVRAM boot args, along with [Misc:Boot:Hibernation](https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/) setup)
 
@@ -23,10 +23,10 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 This is a sweet little machine, took me a while to run Sonoma and then stumbled on the infamous wake-from-sleep issue with its HD 530 iGPU. No way I would accept a non-sleeping computer, so took it upon myself to solve the problem - essentially trying laptop-specific advice from OSXLatitude and insanelymac forum users. Seems it's working (fingers crossed). 
 - WOL works, with the included Mausi driver (v1.0.8)
 - use powerbutton to wake
-- the USB ports were mapped with [CorpNewt's](https://github.com/corpnewt/USBMap) scripts under an iMac19,1 SMBIOS, and then edited to reflect the current MacMini8,1; IIRC the front USB ports only accept USB3.0 devices (i.e. no keyboard/mouses)
-- Hackintool reports iGPU as "???", and I don't know the significance of this
+- the USB ports were initially mapped with [CorpNewt's](https://github.com/corpnewt/USBMap) scripts under an iMac19,1 SMBIOS
+- however, the final map was obtained by booting Windows 10 and then running [USBToolBox/tool](https://github.com/USBToolBox/tool); of note it detected the Intel Bluetooth adapter and assigned it to an "internal" port, but not really identifying it
+- Hackintool reports iGPU as "???", and I don't know the significance of this; it works fine
 - bluetooth is reported as present, but haven't bothered to check if it works or not (probably won't be reliable)
-- the zipped ready-to-use EFI does not include Audio resources and other themes (to save space); please download if required
 
   
 ## Post-install:
@@ -34,37 +34,36 @@ This is a sweet little machine, took me a while to run Sonoma and then stumbled 
 Setup pmset as [follows](https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/commit/705f534991a6458cc23eaea02799413531471470):
 
 ```
+sudo pmset restoredefaults
 sudo pmset -a hibernatemode 25
 sudo pmset -a standby 1
 sudo pmset -a powernap 1
 sudo pmset -a sleep 1
-sudo pmset -a standbydelaylow 660
-sudo pmset -a standbydelayhigh 660
+sudo pmset -a standbydelaylow 610
+sudo pmset -a standbydelayhigh 610
 
-devo@ThinkCentre ~ % pmset -g
 System-wide power settings:
 Currently in use:
  standby              1
  Sleep On Power Button 1
  womp                 1
- halfdim              1
+ autorestart          0
  hibernatefile        /var/vm/sleepimage
  proximitywake        1
  powernap             1
- autorestart          0
  networkoversleep     0
  disksleep            10
- standbydelayhigh     660
+ standbydelayhigh     610
  sleep                1
  hibernatemode        25
  ttyskeepawake        1
- displaysleep         5
+ displaysleep         2
  tcpkeepalive         1
  highstandbythreshold 50
- standbydelaylow      660
+ standbydelaylow      610
 ```
 ## Epilogue
-Does it work? Well, I'll leave it on for as long as possible and report back (currently on day 1, it's November 13, 2023). So far so good!
+Does it work? Well, I'll leave it on for as long as possible and report back (currently December 9, 2023). So far so good!
 
 
 With greetings from Athens,
