@@ -14,9 +14,10 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 
 ## Brief guide:
 
-- download the EFI.zip, expand it and update your serial number with GenSMBIOS (for a MacMini8,1), as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)
+- download the EFI.zip, expand it and update your serial number with GenSMBIOS (for an iMac19,1), as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)
 - note that the Files section above includes only a subset, for review purposes. Don't copy it to the EFI partition, instead use the expanded EFI.zip
 - should be bootable (OC 0.9.5 and up-to-date kexts)
+- note: HibernationFixup and Lilu are debug versions
 - the individual non-compressed folders are provided for guidance (of particular significance is config.plist, which lists the DeviceProperties and NVRAM boot args, along with [Misc:Boot:Hibernation](https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/) setup)
 
 ## Miscellaneous (but important) notes:
@@ -65,11 +66,18 @@ Currently in use:
 ## Epilogue
 Does it work? Well, I'll leave it on for as long as possible and report back (currently December 9, 2023). So far so good!
 
-
 With greetings from Athens,
 
-
 [Xen](https://eplabmediterraneo.com)
+
+## Debugging
+Here's a small collection of commands to view the debug logs, gathered from the internet:
+```
+pmset -g log | egrep "\b(Sleep|Wake|DarkWake|Start)\s{2,}"
+sudo dmesg | grep HBFX
+log show --predicate 'process == "kernel"' --style syslog --source --debug --last boot
+sudo log show --predicate 'process == "kernel"' --style syslog --source --debug | grep hibern
+```
 
 ## Credits:
 - the usual (Apple, the Dortania / Opencore team, myriads of individual users)
