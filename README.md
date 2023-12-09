@@ -27,7 +27,7 @@ This is a sweet little machine, took me a while to run Sonoma and then stumbled 
 - the USB ports were initially mapped with [CorpNewt's](https://github.com/corpnewt/USBMap) scripts under an iMac19,1 SMBIOS
 - however, the final map was obtained by booting Windows 10 and then running [USBToolBox/tool](https://github.com/USBToolBox/tool); of note it detected the Intel Bluetooth adapter and assigned it to an "internal" port, but not really identifying it
 - Hackintool reports iGPU as "???", and I don't know the significance of this; it works fine
-- bluetooth is reported as present, but haven't bothered to check if it works or not (probably won't be reliable); the IntelBT injectors are disabled in the config.plist, but BlueToolFixup is required (otherwise you get an annoying dialog at startup)
+- Bluetooth is reported as present, but haven't bothered to check if it works or not (probably won't be reliable); the IntelBT injectors are disabled in the config.plist, but BlueToolFixup is required (otherwise you get an annoying dialog at startup)
 - these are current boot arguments*
 ```
   boot-args	alcid=21 igfxagdc=0  revpatch=sbvmm agdpmod=vit9696 forceRenderStandby=0 igfxonln=1 keepsyms=1 -amfipassbeta swd_panic=1 hbfx-ahbm=1 darkwake=1 -nodisplaysleepDC6  -liludbgall -hbfxdbg -btlfxallowanyaddr
