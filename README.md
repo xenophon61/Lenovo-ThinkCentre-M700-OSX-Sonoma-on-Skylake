@@ -35,7 +35,7 @@ This is a sweet little machine, took me a while to run Sonoma and then stumbled 
 - the SSDT-USBW.aml is created as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/usb/misc/keyboard.html#method-1-add-wake-type-property-recommended)
 - final important note: AppleALC is disabled (must use a USB sound adapter)*
 
-Solving the display wake issue required a lot of Voodoo; the items marked with an asterisk probably played a major role
+Solving the display wake issue required a lot of Voodoo; the items marked with an asterisk probably played a major role, and I just don't have the resources to figure out which exactly is critical or not.
 
   
 ## Post-install:
