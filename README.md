@@ -25,15 +25,15 @@ This is a sweet little machine, took me a while to run Sonoma and then stumbled 
 - WOL works, with the included Mausi driver (v1.0.8)
 - use powerbutton to wake
 - the USB ports were initially mapped with [CorpNewt's](https://github.com/corpnewt/USBMap) scripts under an iMac19,1 SMBIOS
-- however, the final map* was obtained by booting Windows 10 and then running [USBToolBox/tool](https://github.com/USBToolBox/tool); of note it detected the Intel Bluetooth adapter and assigned it to an "internal" port, but not really identifying it
+- however, the final map(*) was obtained by booting Windows 10 and then running [USBToolBox/tool](https://github.com/USBToolBox/tool); of note it detected the Intel Bluetooth adapter and assigned it to an "internal" port, but not really identifying it
 - Hackintool reports iGPU as "???", and I don't know the significance of this; it works fine
 - Bluetooth is reported as present, but haven't bothered to check if it works or not (probably won't be reliable); the IntelBT injectors are disabled in the config.plist, but BlueToolFixup is required (otherwise you get an annoying dialog at startup)
-- these are the current boot arguments*
+- these are the current boot arguments(*)
 ```
   boot-args	alcid=21 igfxagdc=0  revpatch=sbvmm agdpmod=vit9696 forceRenderStandby=0 igfxonln=1 keepsyms=1 -amfipassbeta swd_panic=1 hbfx-ahbm=1 darkwake=1 -nodisplaysleepDC6  -liludbgall -hbfxdbg -btlfxallowanyaddr
 ```
 - the SSDT-USBW.aml is created as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/usb/misc/keyboard.html#method-1-add-wake-type-property-recommended)
-- final important note: AppleALC is disabled (must use a USB sound adapter)*
+- final important note: AppleALC is disabled (must use a USB sound adapter)(*)
 
 Solving the display wake issue required a lot of Voodoo; the items marked with an asterisk probably played a major role, and I just don't have the resources to figure out which exactly is critical or not.
 
