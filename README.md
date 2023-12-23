@@ -14,7 +14,7 @@ Opencore configuration to run OS X Sonoma on a (i5) ThinkCentre M700 Skylake SFF
 
 ## Brief guide:
 
-- enable CSM in BIOS, along with the settings from the Wiki; now is the time to turn CFG Lock off, and enable XCHI (again, check the Wiki)
+- enable CSM in BIOS, as per the Wiki; now is the time to turn CFG Lock off, and enable XCHI (again, check the Wiki)
 - download the EFI.zip, expand it and update your serial number with GenSMBIOS (for an iMac19,1), as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)
 - note that the Files section above includes only a subset, for review purposes. Don't copy it to the EFI partition, instead use the expanded EFI.zip
 - should be bootable (OC 0.9.5 and up-to-date kexts)
