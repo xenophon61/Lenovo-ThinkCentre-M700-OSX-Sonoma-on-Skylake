@@ -30,7 +30,7 @@ This is a sweet little machine, took me a while to run Sonoma and then stumbled 
 - Bluetooth is reported as present, but haven't bothered to check if it works or not (probably won't be reliable); the IntelBT injectors are disabled in the config.plist, but BlueToolFixup is required (otherwise you get an annoying dialog at startup)
 - these are the current boot arguments(*)
 ```
-  boot-args	alcid=21 igfxagdc=0  revpatch=sbvmm agdpmod=vit9696 forceRenderStandby=0 igfxonln=1 keepsyms=1 -amfipassbeta swd_panic=1 hbfx-ahbm=1 darkwake=1 -nodisplaysleepDC6  -liludbgall -hbfxdbg -btlfxallowanyaddr
+  boot-args	alcid=21 igfxagdc=0  revpatch=sbvmm forceRenderStandby=0 igfxonln=1 keepsyms=1 -amfipassbeta swd_panic=1 hbfx-ahbm=1 darkwake=0 -noDC9  -liludbgall -hbfxdbg -btlfxallowanyaddr
 ```
 - the SSDT-USBW.aml is created as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/usb/misc/keyboard.html#method-1-add-wake-type-property-recommended)
 - final important note: AppleALC is disabled (must use a USB sound adapter)(*)
