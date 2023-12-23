@@ -47,7 +47,7 @@ Setup pmset as [follows](https://github.com/jkbuha/XPS-9500-IceLake-OpenCore/com
 sudo pmset restoredefaults
 sudo pmset -a hibernatemode 25
 sudo pmset -a standby 1
-sudo pmset -a powernap 1
+sudo pmset -a powernap 0
 sudo pmset -a sleep 1
 sudo pmset -a standbydelaylow 610
 sudo pmset -a standbydelayhigh 610
