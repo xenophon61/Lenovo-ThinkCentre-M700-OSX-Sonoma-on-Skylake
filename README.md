@@ -33,10 +33,10 @@ This is a sweet little machine, took me a while to run Sonoma and then stumbled 
 ```
   boot-args	alcid=21 igfxagdc=0  revpatch=sbvmm forceRenderStandby=0 igfxonln=1 keepsyms=1 -amfipassbeta swd_panic=1 hbfx-ahbm=1 darkwake=0 -noDC9  -liludbgall -hbfxdbg -btlfxallowanyaddr
 ```
-- the SSDT-USBW.aml is created as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/usb/misc/keyboard.html#method-1-add-wake-type-property-recommended)
+- the SSDT-USBW.aml is created as per [Dortania](https://dortania.github.io/OpenCore-Post-Install/usb/misc/keyboard.html#method-1-add-wake-type-property-recommended) but unused; same for the stock Dortania SSDT-USBX.aml
 - final important note: AppleALC is disabled (must use a USB sound adapter)(*)
 
-Solving the display wake issue required a lot of Voodoo; the items marked with an asterisk probably played a major role, and I just don't have the resources to figure out which exactly is critical or not.
+Solving the display wake issue required a lot of Voodoo; the items marked with an asterisk probably played a major role, and I just don't have the resources to figure out which exactly is critical or not. I plan to gradually introduce them and see (AppleALC.kext in particular).
 
   
 ## Post-install:
@@ -74,6 +74,8 @@ Currently in use:
 ```
 ## Epilogue
 Does it work? Well, I'll leave it on for as long as possible and report back (currently December 9, 2023). So far so good!
+
+24-Dec-23 update: new setup, slightly changed from above, has slept and woke up n=6 times in the past couple of days. Stay posted for an updated EFI folder.
 
 With greetings from Athens,
 
