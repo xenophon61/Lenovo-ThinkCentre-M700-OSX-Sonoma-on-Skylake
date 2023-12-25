@@ -77,7 +77,7 @@ Currently in use:
 ## Epilogue
 Does it work? Well, I'll leave it on for as long as possible and report back (currently December 9, 2023). So far so good!
 
-25-Dec-23 update: new setup, slightly changed from above, has slept and was awakened (using the power button) n=10 times in the past couple of days. Stay posted for an updated EFI folder in a week or two.
+25-Dec-23 update: new setup, slightly changed from above, has slept and awakened (using the power button) n=10 times in the past few days. Stay posted for an updated EFI folder in a week or two. In the meantime, you can recreate the EFI using "config.plist" for guidance.
 
 With greetings from Athens,
 
@@ -97,6 +97,7 @@ sudo log show --predicate 'process == "kernel"' --style syslog --source --debug 
 - [Acidanthera](https://github.com/acidanthera) deserves a standing ovation!
 - [insanelymac](https://www.insanelymac.com)
 - [osxlatitude forums](https://osxlatitude.com)
+- [deeveedee's](https://www.insanelymac.com/forum/profile/1099364-deeveedee/) posts on insanelymac; in a class by themselves
 - Dortania on how to unlock CFG: https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#turning-off-cfg-lock-manually
 - this post applies to the HD 630, but was used as a template for the HD 530 on the ThinkCentre; genious approach! (https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/)https://www.insanelymac.com/forum/topic/355419-90-solved-hibernatemode-25-successfully-working-on-intel-hd-630-igpu-but-glitch-issues-on-first-wake-screen/
 - https://github.com/lshbluesky/OC-GA-B250M-DS3H-Hackintosh (same author as the above insanelymac post)
