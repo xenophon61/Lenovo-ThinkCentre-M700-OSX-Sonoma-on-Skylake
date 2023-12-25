@@ -72,7 +72,7 @@ Currently in use:
  highstandbythreshold 50
  standbydelaylow      610
 ```
-# disable RTC wakes
+### disable RTC wakes
 This has been described very eloquently by [JayMonkey](https://www.tonymacx86.com/threads/solved-ventura-random-scheduled-pm-wake-from-sleep.323359/post-2387982), and involves some steps to create a new powerd.plist.
 
 ## Epilogue
