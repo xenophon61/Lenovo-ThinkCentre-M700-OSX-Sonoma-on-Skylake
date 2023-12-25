@@ -75,7 +75,7 @@ Currently in use:
 ## Epilogue
 Does it work? Well, I'll leave it on for as long as possible and report back (currently December 9, 2023). So far so good!
 
-24-Dec-23 update: new setup, slightly changed from above, has slept and woke up n=6 times in the past couple of days. Stay posted for an updated EFI folder.
+25-Dec-23 update: new setup, slightly changed from above, has slept and was awakened (using the power button) n=10 times in the past couple of days. Stay posted for an updated EFI folder in a week or two.
 
 With greetings from Athens,
 
