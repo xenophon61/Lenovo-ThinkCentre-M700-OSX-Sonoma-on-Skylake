@@ -37,6 +37,7 @@ This is a sweet little machine, took me a while to run Sonoma and then stumbled 
 - final important note: AppleALC is disabled (must use a USB sound adapter)(*)
 
 Solving the display wake issue required a lot of Voodoo; the items marked with an asterisk probably played a major role, and I just don't have the resources to figure out which exactly is critical or not. I plan to gradually introduce them and see (AppleALC.kext in particular).
+Disclaimer: it should be considered as a work-in-progress. I've had 10+ successful sleep/wake cycles over many days, but the occasional hard freeze on wake :-(
 
   
 ## Post-install:
