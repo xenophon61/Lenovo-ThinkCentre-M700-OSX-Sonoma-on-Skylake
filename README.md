@@ -81,6 +81,8 @@ Does it work? Well, I'll leave it on for as long as possible and report back (cu
 
 25-Dec-23 update: new setup, slightly changed from above, has slept and awakened (using the power button) n=10 times in the past few days. Stay posted for an updated EFI folder in a week or two. In the meantime, you can recreate the EFI using "config.plist" for guidance.
 
+See Disclaimer, just above.
+
 With greetings from Athens,
 
 [Xen](https://eplabmediterraneo.com)
